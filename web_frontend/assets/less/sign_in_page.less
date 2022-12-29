@@ -1,0 +1,153 @@
+
+@import url("../less/global.less");
+#wrapper{
+    .form_template{
+        background-color: #1D1F2B;
+        border-radius: 20px;
+        display: flex;
+        height: 671px;
+        justify-content: space-between;
+        margin: 120px auto;
+        overflow: hidden;
+        width: 876px;
+        div{
+            &:first-child{
+                padding: 74px 78px;
+                width: 100%;
+            }
+            &:last-child{
+                background-color: @dark_grey;
+                height: 100%;
+                min-width: 205px;
+                overflow: hidden;
+                padding: 75px 51px;
+                position: relative;
+                &::before, &::after{
+                    content: "";
+                    position: absolute;
+                }
+                &::before{
+                    background: url("../images/right_panel_sign_up_in.svg");
+                    background-size: contain;
+                    height: 373px;
+                    left: -37px;
+                    top: -51px;
+                    width: 277px;
+                }
+                &::after{
+                    background: url("../images/the_icon_sprite.svg");
+                    background-position: -180px 0;
+                    height: 110px;
+                    width: 95px;
+                }
+            }
+        }
+        .columned_block{
+            display: flex;
+            justify-content: space-between;
+            label{
+                width: 48.4%;
+            }
+        }
+        h1{
+            color: @white;
+            font: 21px/25px @roboto_regular;
+            padding-left: 76px;
+            position: relative;
+            margin: 0 0 44px;
+            span{
+                color: @grey;
+                display: block;
+                font: 17px/21px @roboto_regular;
+                margin-top: 4px;
+            }
+            &::before{
+                background: url("../images/the_icon_sprite.svg");
+                background-position: 133px -33px;
+                content: "";
+                height: 46px;
+                left: 0;
+                position: absolute;
+                width: 46px;
+            }
+        }
+        label{
+            color: @grey;
+            display: block;
+            font: 14px/16px @roboto_regular;
+            margin-top: 19px;
+        }
+        .form_inputs{
+            background: #31354F;
+            border-radius: 9px;
+            border: 1px solid transparent;
+            color: @white;
+            display: block;
+            font: 16px/16px @roboto_regular;
+            height: 60px;
+            margin-top: 8px;
+            outline: none;
+            padding: 20px;
+            width: 100%;
+        }
+        input[type=submit]{
+            font: 21px/25px @roboto_medium;
+            height: 60px;
+            margin-top: 30px;
+            width: 100%;
+        }
+        p{
+            color: @grey;
+            font: 17px/21px @roboto_regular;
+            text-align: center;
+            margin-top: 36px;
+            a{
+                color: @blue;
+            }
+        }
+    }
+    @media only screen and (max-width: 980px){
+        padding: 0 40px;
+        .form_template{
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .form_template{
+            div{
+                &:first-child{
+                    padding: 35px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 680px){
+        .form_template{
+            div{
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 540px){
+        padding: 0 30px;
+        .form_template{
+            height: 540px;
+            &#sign_up_form{
+                height: 740px;
+            }
+            div{
+                &:first-child{
+                    padding: 35px 20px;
+                }
+                .columned_block{
+                    flex-direction: column;
+                    label{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

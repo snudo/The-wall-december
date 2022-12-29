@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@roboto_bold: "Roboto-Bold";
+@roboto_medium: "Roboto-Medium";
+@roboto_regular: "Roboto-Regular";
+
+@blue: #00A3FF;
+@dark_grey: #3B3C43;
+@green:#85EB7E;
+@grey: #6D7186;
+@light_grey: #9496A1;
+@orange: #FFD34F;
+@red: #EB5757;
+@white: #FFFFFF;
+
+.blue_buttons{
+    background-color: @blue;
+    border-radius: 9px;
+    border: none;
+    color: @white;
+    cursor: pointer;
+    outline: none;
+    transition: .21s;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+.error_input{
+    border: 1px solid @red !important;
+}
+
+body{
+    background-color: #2C2D34;
+}

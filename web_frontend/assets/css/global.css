@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+.blue_buttons {
+  background-color: #00A3FF;
+  border-radius: 9px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  transition: 0.21s;
+}
+.blue_buttons:hover {
+  opacity: 0.8;
+}
+.error_input {
+  border: 1px solid #EB5757 !important;
+}
+body {
+  background-color: #2C2D34;
+}
